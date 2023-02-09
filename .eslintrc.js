@@ -5,7 +5,8 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'standard-with-typescript'
+    'standard-with-typescript',
+    'plugin:i18next/recommended'
   ],
   overrides: [],
   parserOptions: {
@@ -14,7 +15,8 @@ module.exports = {
     project: ['./tsconfig.json']
   },
   plugins: [
-    'react'
+    'react',
+    'i18next'
   ],
   rules: {
     'react/jsx-indent': [2, 2],
@@ -41,7 +43,10 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': 'warn',
     '@typescript-eslint/no-floating-promises': 'off',
     '@typescript-eslint/consistent-type-imports': 'off',
-    '@typescript-eslint/prefer-nullish-coalescing': 'off'
+    '@typescript-eslint/prefer-nullish-coalescing': 'off',
+    'i18next/no-literal-string': ['error', {
+      markupOnly: true
+    }]
   },
   globals: {
     __IS_DEV__: true
