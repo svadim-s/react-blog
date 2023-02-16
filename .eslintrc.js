@@ -9,7 +9,12 @@ module.exports = {
     'standard-with-typescript',
     'plugin:i18next/recommended'
   ],
-  overrides: [],
+  overrides: [{
+    files: ['**/src/**/*.test.{ts,tsx}'],
+    rules: {
+      'i18next/no-literal-string': 'off'
+    }
+  }],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -46,10 +51,12 @@ module.exports = {
     '@typescript-eslint/consistent-type-imports': 'off',
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
     'i18next/no-literal-string': ['error', {
-      markupOnly: true
+      markupOnly: true,
+      ignoreAttribute: ['data-testid']
     }],
     'max-len': ['error', {
-      ignoreComments: true
+      ignoreComments: true,
+      code: 120
     }]
   },
   globals: {
