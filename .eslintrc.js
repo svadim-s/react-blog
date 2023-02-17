@@ -7,7 +7,8 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'standard-with-typescript',
-    'plugin:i18next/recommended'
+    'plugin:i18next/recommended',
+    'plugin:storybook/recommended'
   ],
   overrides: [{
     files: ['**/src/**/*.test.{ts,tsx}'],
@@ -20,10 +21,7 @@ module.exports = {
     sourceType: 'module',
     project: ['./tsconfig.json']
   },
-  plugins: [
-    'react',
-    'i18next'
-  ],
+  plugins: ['react', 'i18next'],
   rules: {
     'react/jsx-indent': [2, 2],
     'react/jsx-indent-props': [2, 2],
@@ -52,7 +50,7 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
     'i18next/no-literal-string': ['error', {
       markupOnly: true,
-      ignoreAttribute: ['data-testid']
+      ignoreAttribute: ['data-testid', 'to']
     }],
     'max-len': ['error', {
       ignoreComments: true,
