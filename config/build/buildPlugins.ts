@@ -5,7 +5,7 @@ import { type BuildOptions } from './types/config'
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin'
 
 export function buildPlugins ({ paths, isDev }: BuildOptions): webpack.WebpackPluginInstance[] {
-  return [
+  const plugins = [
     new HTMLWebpackPlugin({
       template: paths.html
     }),
@@ -17,7 +17,12 @@ export function buildPlugins ({ paths, isDev }: BuildOptions): webpack.WebpackPl
     new webpack.DefinePlugin({
       __IS_DEV__: JSON.stringify(isDev)
     }),
-    new webpack.HotModuleReplacementPlugin(),
     new ReactRefreshWebpackPlugin({ overlay: false })
   ]
+
+  if (isDev) {
+    plugins.push(new webpack.HotModuleReplacementPlugin())
+  }
+
+  return plugins
 }
