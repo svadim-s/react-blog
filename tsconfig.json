@@ -44,6 +44,7 @@
     "./config/jest/jest.config.ts",
     "./config/jest/jestEmptyComponent.tsx",
     "./config/jest/setupTests.ts",
+    "./scripts/generate-visual-json-report.js",
     "./src/**/*.ts",
     "./src/**/*.tsx",
   ]
