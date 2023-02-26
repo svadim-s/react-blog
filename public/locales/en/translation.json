@@ -8,8 +8,11 @@
   "О сайте": "About us",
   "Главная": "Main Page",
   "Войти": "Login",
+  "Выйти": "Logout",
   "increment": "increment",
   "decrement": "decrement",
   "Введите логин": "Enter login",
-  "Введите пароль": "Enter password"
+  "Введите пароль": "Enter password",
+  "Форма авторизации": "Authorization form",
+  "Вы ввели неверный логин или пароль": "Uncorrect username or password"
 }
