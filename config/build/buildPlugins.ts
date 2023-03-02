@@ -1,12 +1,15 @@
-import HTMLWebpackPlugin from 'html-webpack-plugin'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 import webpack from 'webpack'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import { type BuildOptions } from './types/config'
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin'
+const BundleAnalyzerPlugin =
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 export function buildPlugins ({ paths, isDev }: BuildOptions): webpack.WebpackPluginInstance[] {
   const plugins = [
-    new HTMLWebpackPlugin({
+    new HtmlWebpackPlugin({
       template: paths.html
     }),
     new webpack.ProgressPlugin(),
@@ -22,6 +25,9 @@ export function buildPlugins ({ paths, isDev }: BuildOptions): webpack.WebpackPl
 
   if (isDev) {
     plugins.push(new webpack.HotModuleReplacementPlugin())
+    plugins.push(new BundleAnalyzerPlugin({
+      openAnalyzer: false
+    }))
   }
 
   return plugins
