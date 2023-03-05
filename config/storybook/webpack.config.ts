@@ -30,14 +30,10 @@ export default ({ config }: { config: webpack.Configuration }) => {
   })
   config.module?.rules?.push(buildCssLoader(true))
 
-  config.plugins.push(new DefinePlugin({
-    __IS_DEV__: true
+  config?.plugins?.push(new DefinePlugin({
+    __IS_DEV__: JSON.stringify(true),
+    __API__: JSON.stringify('')
   }))
-
-  config.resolve.modules = [
-    path.resolve(__dirname, '../../src'),
-    'node_modules'
-  ]
 
   return config
 }
