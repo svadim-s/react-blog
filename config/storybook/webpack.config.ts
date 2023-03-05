@@ -11,9 +11,23 @@ export default ({ config }: { config: webpack.Configuration }) => {
     src: path.resolve(__dirname, '..', '..', 'src')
   }
 
+  config.resolve = {
+    ...config.resolve,
+    modules: [
+      path.resolve(__dirname, '../../src'),
+      'node_modules',
+      ...(config.resolve?.modules || [])
+    ],
+    extensions: [
+      ...(config.resolve?.extensions || []),
+      '.ts',
+      '.tsx'
+    ]
+  }
+
   // config.resolve?.modules?.push(paths.src)
-  config.resolve?.modules?.push(path.resolve(__dirname, '../../src'), 'node_modules')
-  config.resolve?.extensions?.push('.ts', '.tsx')
+  // config.resolve?.modules?.push(path.resolve(__dirname, '../../src'), 'node_modules')
+  // config.resolve?.extensions?.push('.ts', '.tsx')
 
   if (config.module?.rules) {
     config.module.rules = config.module?.rules?.map((rule: webpack.RuleSetRule | '...') => {
