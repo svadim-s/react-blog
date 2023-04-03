@@ -107,13 +107,17 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
+
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
+
     }
   ],
   "profile": {
