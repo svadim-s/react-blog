@@ -11,7 +11,8 @@ const data = {
   lastname: 'Sergeev',
   first: 'Vadim',
   city: 'Moscow',
-  currency: Currency.RUB
+  currency: Currency.RUB,
+  id: '1'
 }
 
 describe('updateProfileData', () => {
