@@ -33,9 +33,9 @@ export const ArticleViewSelector = memo((props: ArticleViewSelectorProps) => {
 
   return (
     <div className={classNames(cls.ArticleViewSelector, {}, [className])}>
-      {viewTypes.map((viewType, idx) => (
+      {viewTypes.map((viewType) => (
         <Button
-          key={idx}
+          key={viewType.view}
           theme={ThemeButton.CLEAR}
           onClick={onClick(viewType.view)}
         >
