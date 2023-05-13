@@ -1,6 +1,7 @@
 import { CombinedState, configureStore, Reducer, ReducersMapObject } from '@reduxjs/toolkit'
 import { counterReducer } from 'entities/Counter'
 import { userReducer } from 'entities/User'
+import { ScrollSafeReducer } from 'features/ScrollSafe'
 import { $api } from 'shared/api/api'
 import { createReducerManager } from './reducerManager'
 import { StateSchema, ThunkExtraArg } from './StateSchema'
@@ -12,7 +13,8 @@ export function createReduxStore (
   const rootReducers: ReducersMapObject<StateSchema> = {
     ...asyncReducers,
     counter: counterReducer,
-    user: userReducer
+    user: userReducer,
+    scrollSafe: ScrollSafeReducer
   }
 
   const reducerManager = createReducerManager(rootReducers)

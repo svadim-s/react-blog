@@ -20,7 +20,7 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import { DynamicModuleLoader, ReducerList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader'
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch'
 import { useInitialEffect } from 'shared/lib/hooks/useInitilaEffect/useInitialEffect'
-import { Page } from 'shared/ui/Page/Page'
+import { Page } from 'widgets/Page/Page'
 import { TextTheme, Text } from 'shared/ui/Text/Text'
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader'
 

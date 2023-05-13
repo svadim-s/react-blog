@@ -6,13 +6,13 @@ import { ProfileSchema } from 'entities/Profile'
 import { UserSchema } from 'entities/User'
 import { AddCommentFormSchema } from 'features/addCommentForm'
 import { LoginSchema } from 'features/AuthByUsername'
+import { ScrollSafeSchema } from 'features/ScrollSafe/model/types/ScrollSafeSchema'
 import { ArticleDetailsCommentSchema } from 'pages/ArticleDetailsPage'
 import { ArticlesPageSchema } from 'pages/ArticlesPage'
-import { NavigateOptions, To } from 'react-router'
-
 export interface StateSchema {
   counter: CounterSchema
   user: UserSchema
+  scrollSafe: ScrollSafeSchema
 
   // Асинхронные редюсеры
   loginForm?: LoginSchema
