@@ -3,5 +3,18 @@
   "ARTICLE DETAILS": "ДЕТАЛИ СТАТЬИ",
   "Article not found": "Статья не найдена",
   "Comments": "Комментарии",
-  "Read more": "Читать далее..."
+  "Read more": "Читать далее...",
+  "ascending": "возрастанию",
+  "descending": "убыванию",
+  "Sort by": "Сортировка по",
+  "by": "по",
+  "date of creation": "дате создания",
+  "title": "названию",
+  "views": "просмотрам",
+  "The article was not found": "Статья не найдена",
+  "All articles": "Все статьи",
+  "IT": "Айти",
+  "Economics": "Экономика",
+  "Science": "Наука",
+  "Search": "Поиск"
 }
