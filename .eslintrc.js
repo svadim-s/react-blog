@@ -60,7 +60,8 @@ module.exports = {
     '@typescript-eslint/no-invalid-void-type': 'warn',
     'i18next/no-literal-string': ['error', {
       markupOnly: true,
-      ignoreAttribute: ['data-testid', 'to']
+      ignoreAttribute: ['data-testid', 'to'],
+      onlyAttribute: ['']
     }],
     'max-len': ['error', {
       ignoreComments: true,
