@@ -26,7 +26,8 @@ module.exports = {
     'react',
     '@typescript-eslint',
     'i18next',
-    'react-hooks'
+    'react-hooks',
+    'svadim-plugin'
   ],
   rules: {
     'react/jsx-indent': [2, 2],
@@ -70,7 +71,8 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
     'react/display-name': 'off',
-    'no-undef': 'off'
+    'no-undef': 'off',
+    'svadim-plugin/path-checker': 'error'
   },
   globals: {
     __IS_DEV__: true,
