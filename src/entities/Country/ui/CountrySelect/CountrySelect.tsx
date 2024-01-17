@@ -35,7 +35,7 @@ export const CountrySelect = ({ className, value, onChange, readonly }: CountryS
       items={options}
       onChange={onChangeHandler}
       readonly={readonly}
-      direction='top'
+      direction='top right'
       label={t('Specify the country')}
     />
   )
