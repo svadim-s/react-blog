@@ -6,8 +6,8 @@ import { useSelector } from 'react-redux'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch'
 import { Button, ThemeButton } from 'shared/ui/Button/Button'
+import { HStack } from 'shared/ui/Stack/HStack/HStack'
 import { Text } from 'shared/ui/Text/Text'
-import cls from './ProfilePageHeader.module.scss'
 
 interface ProfilePageHeaderProps {
   className?: string
@@ -34,39 +34,36 @@ export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
   }, [dispatch])
 
   return (
-    <div className={classNames(cls.ProfilePageHeader, {}, [className])}>
+    <HStack max justify='between' className={classNames('', {}, [className])}>
       <Text title={t('Профиль')} />
       {canEdit && (
-        <div className={cls.btnWrapper}>
+        <>
           {readonly
             ? (
               <Button
-                className={cls.editBtn}
                 theme={ThemeButton.OUTLINE}
                 onClick={onEdit}
               >
                 {t('Редактировать')}
               </Button>)
             : (
-              <>
+              <HStack gap='8'>
                 <Button
-                  className={cls.editBtn}
                   theme={ThemeButton.OUTLINE_RED}
                   onClick={onCancelEdit}
                 >
                   {t('Отменить')}
                 </Button>
                 <Button
-                  className={cls.saveBtn}
                   theme={ThemeButton.OUTLINE}
                   onClick={onSaveEdit}
                 >
                   {t('Сохранить')}
                 </Button>
-              </>)
+              </HStack>)
           }
-        </div>
+        </>
       )}
-    </div>
+    </HStack>
   )
 }
