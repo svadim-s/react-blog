@@ -61,7 +61,18 @@ module.exports = {
     '@typescript-eslint/no-invalid-void-type': 'warn',
     'i18next/no-literal-string': ['error', {
       markupOnly: true,
-      ignoreAttribute: ['data-testid', 'to', 'role', 'target', 'justify', 'align', 'gap', 'direction', 'title']
+      ignoreAttribute: [
+        'data-testid',
+        'to',
+        'role',
+        'target',
+        'justify',
+        'align',
+        'gap',
+        'direction',
+        'title',
+        'as'
+      ]
     }],
     'max-len': ['error', {
       ignoreComments: true,

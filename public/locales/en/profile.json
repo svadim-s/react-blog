@@ -12,5 +12,7 @@
   "Ваш возраст": "Your age",
   "Город": "City",
   "Введите имя пользователя": "Enter username",
-  "Введите ссылку на аватар": "Enter link to avatar"
+  "Введите ссылку на аватар": "Enter link to avatar",
+  "Specify the country": "Specify the country",
+  "Specify the currency": "Specify the currency"
 }
