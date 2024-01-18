@@ -9,10 +9,12 @@ import { LoginSchema } from 'features/AuthByUsername'
 import { ScrollSafeSchema } from 'features/ScrollSafe/model/types/ScrollSafeSchema'
 import { ArticleDetailsPageSchema } from 'pages/ArticleDetailsPage'
 import { ArticlesPageSchema } from 'pages/ArticlesPage'
+import { rtkApi } from 'shared/api/rtkApi'
 export interface StateSchema {
   counter: CounterSchema
   user: UserSchema
   scrollSafe: ScrollSafeSchema
+  [rtkApi.reducerPath]: ReturnType<typeof rtkApi.reducer>
 
   // Асинхронные редюсеры
   loginForm?: LoginSchema

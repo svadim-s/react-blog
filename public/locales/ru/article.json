@@ -19,5 +19,6 @@
   "Search": "Поиск",
   "Creating a new article": "Создать новую статью",
   "Recommendations": "Рекомендации",
-  "Edit": "Редактировать"
+  "Edit": "Редактировать",
+  "Error loading the article": "Ошибка при загрузке статьи"
 }
