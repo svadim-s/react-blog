@@ -1,6 +1,6 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { StoreDecorator } from 'shared/config/storybook/StoreDecoraator/StoreDecorator'
+import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator'
 import { EditableProfileCard } from './EditableProfileCard'
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-assertions

@@ -10,6 +10,9 @@ import {
 import {
   RouterDecorator
 } from '../../src/shared/config/storybook/RouterDecorator/RouterDecorator'
+import {
+  SuspenseDecorator
+} from '../../src/shared/config/storybook/SuspenseDecorator/SuspenseDecorator'
 
 import {
   Theme
@@ -30,3 +33,4 @@ export const parameters = {
 addDecorator(StyleDecorator)
 addDecorator(ThemeDecorator(Theme.LIGHT))
 addDecorator(RouterDecorator)
+addDecorator(SuspenseDecorator)

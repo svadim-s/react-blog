@@ -2,7 +2,7 @@ import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { ArticleDetails } from './ArticleDetails'
-import { StoreDecorator } from 'shared/config/storybook/StoreDecoraator/StoreDecorator'
+import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator'
 import { Article, ArticleBlockType, ArticleType } from '../../model/types/article'
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-assertions

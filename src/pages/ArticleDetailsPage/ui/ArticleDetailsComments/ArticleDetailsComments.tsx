@@ -3,7 +3,7 @@ import { AddCommentForm } from 'features/addCommentForm'
 import { getArticleCommentsIsLoading } from '../../model/selectors/comments'
 import { addCommentForArticle } from '../../model/services/addCommentForArticle/addCommentForArticle'
 import { getArticleComments } from '../../model/slices/articleDetailsCommentsSlice'
-import { useCallback } from 'react'
+import { Suspense, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useSelector } from 'react-redux'
 import { classNames } from 'shared/lib/classNames/classNames'
@@ -14,10 +14,11 @@ import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByAr
 import { useSearchParams } from 'react-router-dom'
 import { initArticlesPage } from 'pages/ArticlesPage/model/services/initArticlesPage/initArticlesPage'
 import { VStack } from 'shared/ui/Stack'
+import { Skeleton } from 'shared/ui/Skeleton/Skeleton'
 
 interface ArticleDetailsCommentsProps {
   className?: string
-  id: string
+  id?: string
 }
 
 export const ArticleDetailsComments = (props: ArticleDetailsCommentsProps) => {
@@ -46,7 +47,9 @@ export const ArticleDetailsComments = (props: ArticleDetailsCommentsProps) => {
         size={TextSize.L}
         title={t('Comments')}
       />
-      <AddCommentForm onSendComment={onSendComment} />
+      <Suspense fallback={<Skeleton />}>
+        <AddCommentForm onSendComment={onSendComment} />
+      </Suspense>
       <CommentList isLoading={commentsIsLoading} comments={comments} />
     </VStack>
   )
