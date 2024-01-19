@@ -27,7 +27,7 @@ module.exports = {
     '@typescript-eslint',
     'i18next',
     'react-hooks',
-    'svadim-plugin'
+    'path-checker'
   ],
   rules: {
     'react/jsx-indent': [2, 2],
@@ -82,7 +82,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
     'react/display-name': 'off',
     'no-undef': 'off',
-    'svadim-plugin/path-checker': 'error'
+    'path-checker/path-checker': 2
   },
   globals: {
     __IS_DEV__: true,

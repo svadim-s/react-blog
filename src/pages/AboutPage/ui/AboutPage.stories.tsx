@@ -4,6 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator'
 import { Theme } from 'app/providers/ThemeProvider'
 import AboutPage from './AboutPage'
+import { StoreDecorator } from 'shared/config/storybook/StoreDecoraator/StoreDecorator'
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 export default {
@@ -18,7 +19,8 @@ const Template: ComponentStory<typeof AboutPage> = () => <AboutPage />
 
 export const Normal = Template.bind({})
 Normal.args = {}
+Normal.decorators = [StoreDecorator({})]
 
 export const Dark = Template.bind({})
 Dark.args = {}
-Dark.decorators = [ThemeDecorator(Theme.DARK)]
+Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({})]

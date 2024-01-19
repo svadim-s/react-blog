@@ -1,6 +1,6 @@
 import { getArticleDetailsData } from 'entities/Article/model/selectors/articleDetails'
 import { getUserAuthData } from 'entities/User'
-import { getCanEditArticle } from 'pages/ArticleDetailsPage/model/selectors/article'
+import { getCanEditArticle } from '../../model/selectors/article'
 import React, { memo, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useSelector } from 'react-redux'

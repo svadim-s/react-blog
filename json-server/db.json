@@ -578,15 +578,22 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN",
+      "roles": ["ADMIN"],
       "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER",
+      "roles": ["USER"],
       "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
+    },
+    {
+      "id": "3",
+      "username": "manager",
+      "password": "123",
+      "roless": ["MANAGER"],
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
   "profile": [
