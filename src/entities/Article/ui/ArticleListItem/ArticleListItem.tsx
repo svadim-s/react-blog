@@ -1,4 +1,4 @@
-import { Article, ArticleBlockType, ArticleTextBlock, ArticleView } from '../../model/types/article'
+import { Article, ArticleTextBlock } from '../../model/types/article'
 import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './ArticleListItem.module.scss'
 import { Text } from 'shared/ui/Text/Text'
@@ -12,6 +12,7 @@ import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleT
 import { HTMLAttributeAnchorTarget, memo } from 'react'
 import { RoutePath } from 'shared/config/routeConfig/routeConfig'
 import { AppLink } from 'shared/ui/AppLink/AppLink'
+import { ArticleBlockType, ArticleView } from '../../model/consts/articleConsts'
 
 interface ArticleListItemProps {
   className?: string

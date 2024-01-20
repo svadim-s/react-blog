@@ -5,7 +5,7 @@ export type {
 
 export {
   ValidateProfileError
-} from './model/types/profile'
+} from './model/consts/consts'
 
 export {
   ProfileCard

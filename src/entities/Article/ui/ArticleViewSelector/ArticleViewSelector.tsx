@@ -1,4 +1,4 @@
-import { ArticleView } from '../../model/types/article'
+import { ArticleView } from '../../model/consts/articleConsts'
 import { memo } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
 import ListIcon from 'shared/assets/icons/list.svg'

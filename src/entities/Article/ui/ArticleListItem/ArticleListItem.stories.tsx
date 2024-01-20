@@ -1,8 +1,9 @@
 import React from 'react'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 
-import { Article, ArticleView } from '../../model/types/article'
+import { Article } from '../../model/types/article'
 import { ArticleListItem } from './ArticleListItem'
+import { ArticleView } from '../../model/consts/articleConsts'
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 export default {
