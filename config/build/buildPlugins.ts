@@ -4,6 +4,9 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import { type BuildOptions } from './types/config'
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin'
 import CopyPlugin from 'copy-webpack-plugin'
+const CircularDependencyPlugin =
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  require('circular-dependency-plugin')
 const BundleAnalyzerPlugin =
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   require('webpack-bundle-analyzer').BundleAnalyzerPlugin
@@ -35,6 +38,10 @@ export function buildPlugins ({ paths, isDev, apiUrl, project }: BuildOptions): 
     plugins.push(new webpack.HotModuleReplacementPlugin())
     plugins.push(new BundleAnalyzerPlugin({
       openAnalyzer: false
+    }))
+    plugins.push(new CircularDependencyPlugin({
+      exclude: /node_modules/,
+      failOnError: true
     }))
   }
 
