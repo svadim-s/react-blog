@@ -48,6 +48,7 @@
     "./config/jest/setupTests.ts",
     "./scripts/generate-visual-json-report.js",
     "./config/build/loaders/buildBabelLoader.ts",
+    "./config/babel/babelRemovePropsPlugin.ts",
     "./src/**/*.ts",
     "./src/**/*.tsx",
   ]
