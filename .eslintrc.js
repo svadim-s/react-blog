@@ -71,7 +71,8 @@ module.exports = {
         'gap',
         'direction',
         'title',
-        'as'
+        'as',
+        'border'
       ]
     }],
     'max-len': ['error', {
