@@ -50,6 +50,7 @@
     "./scripts/updateImports.ts",
     "./config/build/loaders/buildBabelLoader.ts",
     "./config/babel/babelRemovePropsPlugin.ts",
+    "./vite.config.ts",
     "./src/**/*.ts",
     "./src/**/*.tsx",
   ]
