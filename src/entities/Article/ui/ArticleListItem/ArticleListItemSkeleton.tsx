@@ -1,9 +1,9 @@
 import { ArticleView } from '../../model/consts/articleConsts'
-import { classNames } from 'shared/lib/classNames/classNames'
+import { classNames } from '@/shared/lib/classNames/classNames'
 import cls from './ArticleListItem.module.scss'
-import { Card } from 'shared/ui/Card/Card'
+import { Card } from '@/shared/ui/Card/Card'
 import { memo } from 'react'
-import { Skeleton } from 'shared/ui/Skeleton/Skeleton'
+import { Skeleton } from '@/shared/ui/Skeleton/Skeleton'
 
 interface ArticleListItemSkeletonProps {
   className?: string

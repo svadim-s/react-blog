@@ -1,4 +1,4 @@
-import { ArticleList } from 'entities/Article'
+import { ArticleList } from '@/entities/Article'
 import {
   getArticlesPageError,
   getArticlesPageIsLoading,
@@ -7,7 +7,7 @@ import {
 import { getArticles } from '../../model/slices/articlesPageSlice'
 import { useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'
-import { Text, TextSize } from 'shared/ui/Text/Text'
+import { Text, TextSize } from '@/shared/ui/Text/Text'
 
 interface ArticleInfiniteListProps {
   className?: string

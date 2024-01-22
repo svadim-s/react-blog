@@ -16,7 +16,7 @@
     // Абсолютный импорт
     "baseUrl": ".",
     "paths": {
-      "*": ["./src/*"]
+      "@/*": ["./src/*"]
     },
     // esModuleInterop позволяет работать с пакетами, которые используют
     // common js как с обычными пакета с помощью import (require() module.export) = common js
@@ -47,6 +47,7 @@
     "./config/jest/jestEmptyComponent.tsx",
     "./config/jest/setupTests.ts",
     "./scripts/generate-visual-json-report.js",
+    "./scripts/updateImports.ts",
     "./config/build/loaders/buildBabelLoader.ts",
     "./config/babel/babelRemovePropsPlugin.ts",
     "./src/**/*.ts",
