@@ -84,7 +84,13 @@ module.exports = {
     'react/display-name': 'off',
     'no-undef': 'off',
     'path-checker/path-checker': [2, { alias: '@' }],
-    'path-checker/public-api-imports': [2, { alias: '@' }]
+    'path-checker/public-api-imports': [
+      2,
+      {
+        alias: '@',
+        testFilesPatterns: ['**/*.test.ts', '**/*.story.ts', '**/StoreDecorator.tsx']
+      }
+    ]
   },
   globals: {
     __IS_DEV__: true,
