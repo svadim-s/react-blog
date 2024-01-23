@@ -33,7 +33,7 @@ export function Dropdown (props: DropdownProps) {
 
   return (
     <Menu as='div' className={classNames(cls.Dropdown, {}, [className, popupCls.popup])}>
-      <Menu.Button className={popupCls.trigger}>
+      <Menu.Button as='div' className={popupCls.trigger}>
         {trigger}
       </Menu.Button>
       <Menu.Items className={classNames(cls.menu, {}, menuClasses)}>
