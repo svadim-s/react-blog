@@ -659,5 +659,53 @@
       "username": "Toodie",
       "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
     }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "userId": "1",
+      "articleId": "3",
+      "rate": 3,
+      "feedback": "",
+      "id": "5g9RQrV"
+    },
+    {
+      "userId": "1",
+      "articleId": "4",
+      "rate": 2,
+      "id": "SbKVxQi"
+    },
+    {
+      "userId": "1",
+      "articleId": "5",
+      "rate": 5,
+      "id": "l0uD3nN"
+    },
+    {
+      "userId": "1",
+      "articleId": "6",
+      "rate": 4,
+      "id": "I5-pc9E"
+    },
+    {
+      "userId": "1",
+      "articleId": "7",
+      "rate": 3,
+      "feedback": "",
+      "id": "oCx_gol"
+    }
   ]
 }

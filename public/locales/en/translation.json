@@ -17,5 +17,8 @@
   "Введите пароль": "Enter password",
   "Форма авторизации": "Authorization form",
   "Вы ввели неверный логин или пароль": "Uncorrect username or password",
-  "Create an article": "Create an article"
+  "Create an article": "Create an article",
+  "Your feedback": "Your feedback",
+  "Thanks for your feedback": "Thanks for your feedback",
+  "Close": "Close"
 }
