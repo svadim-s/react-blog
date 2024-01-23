@@ -16,7 +16,7 @@ import {
 
 import {
   Theme
-} from '../../src/app/providers/ThemeProvider'
+} from '../../src/shared/const/theme'
 
 export const parameters = {
   actions: {

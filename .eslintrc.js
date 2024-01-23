@@ -84,6 +84,13 @@ module.exports = {
     'react/display-name': 'off',
     'no-undef': 'off',
     'path-checker/path-checker': [2, { alias: '@' }],
+    'path-checker/layer-imports': [
+      2,
+      {
+        alias: '@',
+        ignoreImportPatterns: ['**/StoreProvider', '**/testing']
+      }
+    ],
     'path-checker/public-api-imports': [
       2,
       {

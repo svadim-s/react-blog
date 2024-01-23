@@ -11,8 +11,6 @@ import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch
 import { TextSize, Text } from '@/shared/ui/Text/Text'
 import { useInitialEffect } from '@/shared/lib/hooks/useInitilaEffect/useInitialEffect'
 import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId'
-import { useSearchParams } from 'react-router-dom'
-import { initArticlesPage } from '@/pages/ArticlesPage'
 import { VStack } from '@/shared/ui/Stack'
 import { Skeleton } from '@/shared/ui/Skeleton/Skeleton'
 
@@ -27,11 +25,6 @@ export const ArticleDetailsComments = (props: ArticleDetailsCommentsProps) => {
   const comments = useSelector(getArticleComments.selectAll)
   const commentsIsLoading = useSelector(getArticleCommentsIsLoading)
   const dispatch = useAppDispatch()
-  const [searchParams] = useSearchParams()
-
-  useInitialEffect(() => {
-    dispatch(initArticlesPage(searchParams))
-  })
 
   const onSendComment = useCallback((text: string) => {
     dispatch(addCommentForArticle(text))
