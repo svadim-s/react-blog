@@ -12,7 +12,7 @@ import { TextSize, Text } from '@/shared/ui/Text/Text'
 import { useInitialEffect } from '@/shared/lib/hooks/useInitilaEffect/useInitialEffect'
 import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId'
 import { useSearchParams } from 'react-router-dom'
-import { initArticlesPage } from '@/pages/ArticlesPage/model/services/initArticlesPage/initArticlesPage'
+import { initArticlesPage } from '@/pages/ArticlesPage'
 import { VStack } from '@/shared/ui/Stack'
 import { Skeleton } from '@/shared/ui/Skeleton/Skeleton'
 

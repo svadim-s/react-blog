@@ -3,8 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import ArticleDetailsPage from './ArticleDetailsPage'
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator'
-import { Article } from '@/entities/Article/model/types/article'
-import { ArticleBlockType, ArticleType } from '@/entities/Article/model/consts/articleConsts'
+import { Article, ArticleBlockType, ArticleType } from '@/entities/Article'
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 export default {

@@ -1,4 +1,4 @@
-import { getArticleDetailsData } from '@/entities/Article/model/selectors/articleDetails'
+import { getArticleDetailsData } from '@/entities/Article'
 import { getUserAuthData } from '@/entities/User'
 import { getCanEditArticle } from '../../model/selectors/article'
 import React, { memo, useCallback } from 'react'
