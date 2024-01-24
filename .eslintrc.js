@@ -27,7 +27,8 @@ module.exports = {
     '@typescript-eslint',
     'i18next',
     'react-hooks',
-    'path-checker'
+    'path-checker',
+    'unused-imports'
   ],
   rules: {
     'react/jsx-indent': [2, 2],
@@ -83,6 +84,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
     'react/display-name': 'off',
     'no-undef': 'off',
+    'unused-imports/no-unused-imports': 'error',
     'path-checker/path-checker': [2, { alias: '@' }],
     'path-checker/layer-imports': [
       2,
