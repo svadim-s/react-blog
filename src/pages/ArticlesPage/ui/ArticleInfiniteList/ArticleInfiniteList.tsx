@@ -7,7 +7,7 @@ import {
 import { getArticles } from '../../model/slices/articlesPageSlice'
 import { useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'
-import { Text, TextSize } from '@/shared/ui/Text/Text'
+import { Text, TextSize } from '@/shared/ui/Text'
 
 interface ArticleInfiniteListProps {
   className?: string

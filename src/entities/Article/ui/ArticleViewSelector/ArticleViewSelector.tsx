@@ -4,8 +4,8 @@ import { classNames } from '@/shared/lib/classNames/classNames'
 import ListIcon from '@/shared/assets/icons/list.svg'
 import TiledIcon from '@/shared/assets/icons/tiled.svg'
 import cls from './ArticleViewSelector.module.scss'
-import { Button, ThemeButton } from '@/shared/ui/Button/Button'
-import { Icon } from '@/shared/ui/Icon/Icon'
+import { Button, ThemeButton } from '@/shared/ui/Button'
+import { Icon } from '@/shared/ui/Icon'
 
 interface ArticleViewSelectorProps {
   className?: string
