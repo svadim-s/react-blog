@@ -1,18 +1,22 @@
 import {
   addDecorator
 } from '@storybook/react'
+
 import {
   StyleDecorator
 } from '../../src/shared/config/storybook/StyleDecorator/StyleDecorator'
-import {
-  ThemeDecorator
-} from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator'
+
 import {
   RouterDecorator
 } from '../../src/shared/config/storybook/RouterDecorator/RouterDecorator'
+
 import {
   SuspenseDecorator
 } from '../../src/shared/config/storybook/SuspenseDecorator/SuspenseDecorator'
+
+import {
+  ThemeDecorator
+} from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator'
 
 import {
   Theme
@@ -28,6 +32,14 @@ export const parameters = {
       date: /Date$/
     }
   }
+  // themes: {
+  //   default: 'light',
+  //   list: [
+  //     { name: 'light', class: ['app', Theme.LIGHT], color: '#fff' },
+  //     { name: 'dark', class: ['app', Theme.DARK], color: '#000' },
+  //     { name: 'orange', class: ['app', Theme.ORANGE], color: '#ffb005' }
+  //   ]
+  // }
 }
 
 addDecorator(StyleDecorator)
