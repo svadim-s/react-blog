@@ -43,6 +43,7 @@
   "include": [
     "./webpack.config.ts",
     "./config/storybook/webpack.config.ts",
+    "./config/storybook/main.ts",
     "./config/jest/jest.config.ts",
     "./config/jest/jestEmptyComponent.tsx",
     "./config/jest/setupTests.ts",
