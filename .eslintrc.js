@@ -60,6 +60,7 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
     '@typescript-eslint/no-dynamic-delete': 'warn',
     '@typescript-eslint/no-invalid-void-type': 'warn',
+    '@typescript-eslint/no-namespace': 'off',
     'i18next/no-literal-string': ['error', {
       markupOnly: true,
       ignoreAttribute: [
