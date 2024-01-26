@@ -37,14 +37,21 @@ const AddCommentForm = memo(({ className, onSendComment }: AddCommentFormProps) 
 
   return (
     <DynamicModuleLoader reducers={reducers}>
-      <HStack justify='between' max className={classNames(cls.AddCommentForm, {}, [className])}>
+      <HStack
+        data-testid='AddCommentForm'
+        justify='between'
+        max
+        className={classNames(cls.AddCommentForm, {}, [className])}
+      >
         <Input
+          data-testid='AddCommentForm.Input'
           className={cls.input}
           placeholder={t('Enter comment text')}
           value={text}
           onChange={onCommentTextChange}
         />
         <Button
+          data-testid='AddCommentForm.Button'
           theme={ThemeButton.OUTLINE}
           onClick={onSendHandler}
         >

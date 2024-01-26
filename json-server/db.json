@@ -549,6 +549,32 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Экономическая статья - ИНФЛЯЦИЯ!",
+      "subtitle": "Экономика",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "zIMWV1o"
+    },
+    {
+      "title": "Экономическая статья - ИНФЛЯЦИЯ!",
+      "subtitle": "Экономика",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [],
+      "id": "X15NzFF"
     }
   ],
   "comments": [
@@ -611,6 +637,12 @@
       "userId": "1",
       "text": "dassda",
       "id": "WTuXoh-"
+    },
+    {
+      "articleId": "X15NzFF",
+      "userId": "4",
+      "text": "text",
+      "id": "UuxSVk3"
     }
   ],
   "users": [
@@ -672,6 +704,17 @@
       "country": "Russia",
       "city": "Moscow",
       "username": "Toodie",
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
+    },
+    {
+      "id": "4",
+      "first": "test",
+      "lastname": "user",
+      "age": 23,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "testuser",
       "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
     }
   ],
