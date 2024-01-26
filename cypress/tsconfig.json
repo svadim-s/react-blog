@@ -21,6 +21,9 @@
     "./e2e/article/article-details.cy.ts",
     "./e2e/profile/profile-edit.cy.ts",
     "./helpers/selectByTestId.ts",
+    "./component/EditableProfileCard.cy.tsx",
+    "./support/component.ts",
+    "./cypress.d.ts",
     "**/*.ts", 
     "**/*.tsx"
   ]

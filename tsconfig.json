@@ -61,13 +61,16 @@
     "./cypress/support/commands/profile.ts",
     "./cypress/support/commands/rating.ts",
     "./cypress/support/commands/common.ts",
+    "./cypress/support/component.ts",
     "./cypress/e2e/common/routing.cy.ts",
     "./cypress/e2e/article/articles-list.cy.ts",
     "./cypress/e2e/article/article-details.cy.ts",
     "./cypress/e2e/profile/profile-edit.cy.ts",
     "./cypress/helpers/selectByTestId.ts",
+    "./cypress/component/EditableProfileCard.cy.tsx",
+    "./cypress/cypress.d.ts",
     "./vite.config.ts",
     "./src/**/*.ts",
     "./src/**/*.tsx",
-  ]
+  ],
 }
