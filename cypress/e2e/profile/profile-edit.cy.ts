@@ -1,4 +1,4 @@
-import { getByTestId } from 'cypress/support/commands/common'
+import { getByTestId } from '../../support/commands/common'
 
 let profileId = ''
 

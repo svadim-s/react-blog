@@ -4,8 +4,24 @@
     "lib": ["es5", "dom"],
     "types": ["cypress", "node"],
     "allowJs": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
   },
   "extends": "../tsconfig.json",
-  "include": ["**/*.ts"]
+  "include": [
+    "./support/commands.ts",
+    "./support/e2e.ts",
+    "./support/commands/login.ts",
+    "./support/commands/article.ts",
+    "./support/commands/comments.ts",
+    "./support/commands/profile.ts",
+    "./support/commands/rating.ts",
+    "./support/commands/common.ts",
+    "./e2e/common/routing.cy.ts",
+    "./e2e/article/articles-list.cy.ts",
+    "./e2e/article/article-details.cy.ts",
+    "./e2e/profile/profile-edit.cy.ts",
+    "./helpers/selectByTestId.ts",
+    "**/*.ts", 
+    "**/*.tsx"
+  ]
 }

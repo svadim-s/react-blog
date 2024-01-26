@@ -1,6 +1,6 @@
 let currentArticleId = ''
 
-describe('Пользователь заходи на страницу статьи', () => {
+describe('Пользователь заходит на страницу статьи', () => {
   beforeEach(() => {
     cy.login()
     cy.createArticle().then((article) => {
@@ -29,9 +29,12 @@ describe('Пользователь заходи на страницу стать
   })
 
   it('Поставить оценку', () => {
+    cy.intercept('GET', '**/articles/*', { fixture: 'article-details.json' })
     cy.getByTestId('ArticleDetails.Info')
     cy.getByTestId('RatingCard').scrollIntoView()
     cy.setRate(4, 'feedback')
     cy.get('[data-selected=true]').should('have.length', 4)
   })
 })
+
+export {}
