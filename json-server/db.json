@@ -731,6 +731,9 @@
       "roles": [
         "ADMIN"
       ],
+      "features": {
+        "isArticleRatingEnabled": true
+      },
       "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
     },
     {
@@ -740,6 +743,9 @@
       "roles": [
         "USER"
       ],
+      "features": {
+        "isArticleRatingEnabled": false
+      },
       "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
     },
     {
@@ -749,6 +755,9 @@
       "roless": [
         "MANAGER"
       ],
+      "features": {
+        "isArticleRatingEnabled": true
+      },
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     },
     {
