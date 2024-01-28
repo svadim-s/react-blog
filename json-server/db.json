@@ -735,6 +735,11 @@
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true
       },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
       "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
     },
     {
@@ -747,6 +752,9 @@
       "features": {
         "isArticleRatingEnabled": false,
         "isCounterEnabled": false
+      },
+      "jsonSettings": {
+        "theme": "app_light_theme"
       },
       "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
     },
@@ -761,6 +769,11 @@
         "isArticleRatingEnabled": true,
         "isCounterEnabled": false
       },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     },
     {
@@ -770,6 +783,15 @@
       "roles": [
         "ADMIN"
       ],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": true
+      },
+      "jsonSettings": {
+        "theme": "app_dark_theme",
+        "isFirstVisit": true,
+        "settingsPageHasBeenOpen": false
+      },
       "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
     }
   ],
