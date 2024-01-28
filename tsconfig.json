@@ -50,6 +50,7 @@
     "./scripts/generate-visual-json-report.js",
     "./scripts/refactoring/updateImports.ts",
     "./scripts/refactoring/createPublicApiForSharedUi.ts",
+    "./scripts/remove-feature.ts",
     "./config/build/loaders/buildBabelLoader.ts",
     "./config/babel/babelRemovePropsPlugin.ts",
     "./cypress/support/commands.ts",

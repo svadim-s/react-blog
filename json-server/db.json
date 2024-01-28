@@ -732,7 +732,8 @@
         "ADMIN"
       ],
       "features": {
-        "isArticleRatingEnabled": true
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": true
       },
       "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
     },
@@ -744,7 +745,8 @@
         "USER"
       ],
       "features": {
-        "isArticleRatingEnabled": false
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": false
       },
       "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
     },
@@ -756,7 +758,8 @@
         "MANAGER"
       ],
       "features": {
-        "isArticleRatingEnabled": true
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": false
       },
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     },
