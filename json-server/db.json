@@ -738,7 +738,8 @@
       "jsonSettings": {
         "theme": "app_dark_theme",
         "isFirstVisit": true,
-        "settingsPageHasBeenOpen": false
+        "settingsPageHasBeenOpen": false,
+        "isArticlesPageWasOpened": true
       },
       "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
     },
@@ -754,7 +755,8 @@
         "isCounterEnabled": false
       },
       "jsonSettings": {
-        "theme": "app_light_theme"
+        "theme": "app_light_theme",
+        "isArticlesPageWasOpened": true
       },
       "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
     },
@@ -772,7 +774,8 @@
       "jsonSettings": {
         "theme": "app_dark_theme",
         "isFirstVisit": true,
-        "settingsPageHasBeenOpen": false
+        "settingsPageHasBeenOpen": false,
+        "isArticlesPageWasOpened": true
       },
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     },
@@ -790,7 +793,8 @@
       "jsonSettings": {
         "theme": "app_dark_theme",
         "isFirstVisit": true,
-        "settingsPageHasBeenOpen": false
+        "settingsPageHasBeenOpen": false,
+        "isArticlesPageWasOpened": true
       },
       "avatar": "https://logos-download.com/wp-content/uploads/2016/04/Toronto_Maple_Leafs_logo_logotype_emblem_symbol.jpg"
     }
