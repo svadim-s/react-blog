@@ -2,7 +2,7 @@ import { Country } from '../../model/types/country'
 import { useTranslation } from 'react-i18next'
 import { classNames } from '@/shared/lib/classNames/classNames'
 import { useCallback } from 'react'
-import { ListBox } from '@/shared/ui/Popups'
+import { ListBox } from '@/shared/ui/deprecated/Popups'
 
 interface CountrySelectProps {
   className?: string

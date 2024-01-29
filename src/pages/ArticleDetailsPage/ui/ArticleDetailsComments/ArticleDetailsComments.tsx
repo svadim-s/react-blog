@@ -8,11 +8,11 @@ import { useTranslation } from 'react-i18next'
 import { useSelector } from 'react-redux'
 import { classNames } from '@/shared/lib/classNames/classNames'
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch'
-import { TextSize, Text } from '@/shared/ui/Text'
+import { TextSize, Text } from '@/shared/ui/deprecated/Text'
 import { useInitialEffect } from '@/shared/lib/hooks/useInitilaEffect/useInitialEffect'
 import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId'
-import { VStack } from '@/shared/ui/Stack'
-import { Skeleton } from '@/shared/ui/Skeleton'
+import { VStack } from '@/shared/ui/deprecated/Stack'
+import { Skeleton } from '@/shared/ui/deprecated/Skeleton'
 
 interface ArticleDetailsCommentsProps {
   className?: string

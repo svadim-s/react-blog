@@ -3,9 +3,9 @@ import { classNames } from '@/shared/lib/classNames/classNames'
 import ListIcon from '@/shared/assets/icons/list.svg'
 import TiledIcon from '@/shared/assets/icons/tiled.svg'
 import cls from './ArticleViewSelector.module.scss'
-import { Button, ThemeButton } from '@/shared/ui/Button'
-import { Icon } from '@/shared/ui/Icon'
+import { Button, ThemeButton } from '@/shared/ui/deprecated/Button'
 import { ArticleView } from '@/entities/Article'
+import { Icon } from '@/shared/ui/deprecated/Icon'
 
 interface ArticleViewSelectorProps {
   className?: string
@@ -40,6 +40,8 @@ export const ArticleViewSelector = memo((props: ArticleViewSelectorProps) => {
           onClick={onClick(viewType.view)}
         >
           <Icon
+            width={24}
+            height={24}
             Svg={viewType.icon}
             className={classNames('', { [cls.notSelected]: viewType.view !== view })}
           />

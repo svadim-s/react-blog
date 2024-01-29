@@ -1,13 +1,13 @@
 import { NotificationList } from '@/entities/Notification'
 import { classNames } from '@/shared/lib/classNames/classNames'
-import { Button, ThemeButton } from '@/shared/ui/Button'
-import { Icon } from '@/shared/ui/Icon'
-import { Popover } from '@/shared/ui/Popups'
-import NotificationIcon from '@/shared/assets/icons/notification.svg'
+import { Button, ThemeButton } from '@/shared/ui/deprecated/Button'
+import { Popover } from '@/shared/ui/deprecated/Popups'
+import NotificationIcon from '@/shared/assets/icons/notification-20-20.svg'
 import cls from './NotificationButton.module.scss'
 import { useCallback, useState } from 'react'
-import { Drawer } from '@/shared/ui/Drawer'
 import { BrowserView, MobileView } from 'react-device-detect'
+import { Drawer } from '@/shared/ui/deprecated/Drawer'
+import { Icon } from '@/shared/ui/deprecated/Icon'
 
 interface NotificationButtonProps {
   className?: string
@@ -47,6 +47,5 @@ export const NotificationButton = ({ className }: NotificationButtonProps) => {
         </Drawer>
       </MobileView>
     </div>
-
   )
 }

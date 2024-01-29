@@ -11,19 +11,19 @@ import {
   getArticleDetailsIsLoading
 } from '../../model/selectors/articleDetails'
 import { useSelector } from 'react-redux'
-import { Text, TextAlign, TextSize } from '@/shared/ui/Text'
+import { Text, TextAlign, TextSize } from '@/shared/ui/deprecated/Text'
 import { useTranslation } from 'react-i18next'
-import { Skeleton } from '@/shared/ui/Skeleton'
-import { Avatar } from '@/shared/ui/Avatar'
-import EyeIcon from '@/shared/assets/icons/eye.svg'
+import { Skeleton } from '@/shared/ui/deprecated/Skeleton'
+import { Avatar } from '@/shared/ui/deprecated/Avatar'
+import EyeIcon from '@/shared/assets/icons/eye-20-20.svg'
 import CalendarIcon from '@/shared/assets/icons/calendar.svg'
-import { Icon } from '@/shared/ui/Icon'
 import { ArticleBlock } from '../../model/types/article'
 import { ArticleCodeBlockComponent } from '../ArticleCodeBlockComponent/ArticleCodeBlockComponent'
 import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/ArticleImageBlockComponent'
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent'
-import { HStack, VStack } from '@/shared/ui/Stack'
+import { HStack, VStack } from '@/shared/ui/deprecated/Stack'
 import { ArticleBlockType } from '../../model/consts/articleConsts'
+import { Icon } from '@/shared/ui/deprecated/Icon'
 
 interface ArticleDetailsProps {
   className?: string
