@@ -74,7 +74,8 @@ module.exports = {
         'direction',
         'title',
         'as',
-        'border'
+        'border',
+        'feature'
       ]
     }],
     'max-len': ['error', {
