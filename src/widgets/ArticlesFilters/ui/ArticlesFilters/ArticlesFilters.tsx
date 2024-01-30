@@ -8,6 +8,8 @@ import { useTranslation } from 'react-i18next'
 import { ArticleSortField, ArticleType } from '@/entities/Article'
 import { SortOrder } from '@/shared/types/sort'
 import { Input } from '@/shared/ui/redesigned/Input'
+import SearchIcon from '@/shared/assets/icons/search.svg'
+import { Icon } from '@/shared/ui/redesigned/Icon'
 
 interface ArticlesFiltersProps {
   className?: string
@@ -42,6 +44,7 @@ export const ArticlesFilters = (props: ArticlesFiltersProps) => {
           value={search}
           onChange={onChangeSearch}
           placeholder={t('Search')}
+          addonLeft={<Icon Svg={SearchIcon} />}
         />
         <ArticleSortSelector
           order={order}
