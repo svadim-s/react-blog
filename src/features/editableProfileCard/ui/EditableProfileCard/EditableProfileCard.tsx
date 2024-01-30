@@ -18,7 +18,7 @@ import { profileActions, profileReducer } from '../../model/slice/profileSlice'
 import { ProfileCard } from '@/entities/Profile'
 import { DynamicModuleLoader, ReducerList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader'
 import { EditableProfileCardHeader } from '../EditableProfileCardHeader/EditableProfileCardHeader'
-import { VStack } from '@/shared/ui/deprecated/Stack'
+import { VStack } from '@/shared/ui/redesigned/Stack'
 
 interface EditableProfileCardProps {
   className?: string

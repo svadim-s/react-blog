@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { classNames } from '@/shared/lib/classNames/classNames'
 import { Button, ThemeButton } from '@/shared/ui/deprecated/Button'
-import { HStack } from '@/shared/ui/deprecated/Stack'
+import { HStack } from '@/shared/ui/redesigned/Stack'
 import { getRouteArticleEdit, getRouteArticles } from '@/shared/const/router'
 
 interface ArticleDetailsPageHeaderProps {

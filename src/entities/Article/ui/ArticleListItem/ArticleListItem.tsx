@@ -12,7 +12,7 @@ import { HTMLAttributeAnchorTarget, memo } from 'react'
 import { AppLink } from '@/shared/ui/deprecated/AppLink'
 import { ArticleBlockType, ArticleView } from '../../model/consts/articleConsts'
 import { getRouteArticleDetails } from '@/shared/const/router'
-import { AppImage } from '@/shared/ui/deprecated/AppImage'
+import { AppImage } from '@/shared/ui/redesigned/AppImage'
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton'
 import { Icon } from '@/shared/ui/deprecated/Icon'
 
