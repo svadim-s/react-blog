@@ -28,38 +28,39 @@ export const ArticleList = memo((props: ArticleListProps) => {
   const {
     className,
     articles,
-    isLoading,
     view = ArticleView.TILE,
+    isLoading,
     target
   } = props
-  const { t } = useTranslation('article')
-
-  const renderArticle = (article: Article) => {
-    return (
-      <ArticleListItem
-        article={article}
-        view={view}
-        className={cls.card}
-        key={article.id}
-        target={target}
-      />
-    )
-  }
+  const { t } = useTranslation()
 
   if (!isLoading && !articles.length) {
     return (
-      <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
-        <Text size={TextSize.L} title={t('The article was not found')} />
+      <div
+        className={classNames(cls.ArticleList, {}, [
+          className,
+          cls[view]
+        ])}
+      >
+        <Text size={TextSize.L} title={t('Статьи не найдены')} />
       </div>
     )
   }
 
   return (
-    <div data-testid='ArticleList' className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
-      {articles.length > 0
-        ? articles.map(renderArticle)
-        : null
-      }
+    <div
+      className={classNames(cls.ArticleList, {}, [className, cls[view]])}
+      data-testid="ArticleList"
+    >
+      {articles.map((item) => (
+        <ArticleListItem
+          article={item}
+          view={view}
+          target={target}
+          key={item.id}
+          className={cls.card}
+        />
+      ))}
       {isLoading && getSkeletons(view)}
     </div>
   )
