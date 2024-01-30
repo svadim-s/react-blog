@@ -119,10 +119,12 @@ const replaceComponent = (node: Node) => {
 files.forEach((sourceFile) => {
   sourceFile.forEachDescendant(node => {
     if (node.isKind(SyntaxKind.CallExpression) && isToggleFunction(node)) {
-      replaceToggleFunction(node)
+      // eslint-disable-next-line @typescript-eslint/no-confusing-void-expression
+      return replaceToggleFunction(node)
     }
     if (node.isKind(SyntaxKind.JsxSelfClosingElement) && isToggleComponent(node)) {
-      replaceComponent(node)
+      // eslint-disable-next-line @typescript-eslint/no-confusing-void-expression
+      return replaceComponent(node)
     }
   })
 })
