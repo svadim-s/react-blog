@@ -44,6 +44,7 @@ export const ArticlesFilters = (props: ArticlesFiltersProps) => {
           value={search}
           onChange={onChangeSearch}
           placeholder={t('Search')}
+          size='s'
           addonLeft={<Icon Svg={SearchIcon} />}
         />
         <ArticleSortSelector
