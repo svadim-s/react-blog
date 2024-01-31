@@ -20,5 +20,8 @@
   "Create an article": "Create an article",
   "Your feedback": "Your feedback",
   "Thanks for your feedback": "Thanks for your feedback",
-  "Close": "Close"
+  "Close": "Close",
+  "{{count}} просмотров_zero": "{{count}} views",
+  "{{count}} просмотров_one": "{{count}} view",
+  "{{count}} просмотров_other": "{{count}} views"
 }
