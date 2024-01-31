@@ -78,7 +78,8 @@ module.exports = {
         'feature',
         'color',
         'variant',
-        'size'
+        'size',
+        'wrap'
       ]
     }],
     'max-len': ['error', {
