@@ -7,8 +7,8 @@ import { useTranslation } from 'react-i18next'
 import { Button, ButtonSize, ThemeButton } from '@/shared/ui/deprecated/Button'
 import { BrowserView, MobileView } from 'react-device-detect'
 import { Input } from '@/shared/ui/deprecated/Input'
-import { Modal } from '@/shared/ui/deprecated/Modal'
-import { Drawer } from '@/shared/ui/deprecated/Drawer'
+import { Modal } from '@/shared/ui/redesigned/Modal'
+import { Drawer } from '@/shared/ui/redesigned/Drawer'
 
 interface RatingCardProps {
   className?: string
