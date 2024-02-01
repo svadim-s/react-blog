@@ -2,6 +2,7 @@ import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { CommentCard } from './CommentCard'
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator'
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 export default {
@@ -14,27 +15,27 @@ export default {
 
 const Template: ComponentStory<typeof CommentCard> = (args) => <CommentCard {...args} />
 
-export const Normal = Template.bind({})
-Normal.args = {
+const normalArgs = {
   comment: {
     id: '1',
-    text: 'hello',
-    user: {
-      id: '1',
-      username: 'Toodie'
-    }
+    text: 'hello world',
+    user: { id: '1', username: 'Vasya' }
   }
 }
+
+export const Normal = Template.bind({})
+Normal.args = normalArgs
+
+export const NormalRedesigned = Template.bind({})
+NormalRedesigned.args = normalArgs
+NormalRedesigned.decorators = [NewDesignDecorator]
 
 export const Loading = Template.bind({})
 Loading.args = {
   comment: {
     id: '1',
-    text: 'hello',
-    user: {
-      id: '1',
-      username: 'Toodie'
-    }
+    text: 'hello world',
+    user: { id: '1', username: 'Vasya' }
   },
   isLoading: true
 }

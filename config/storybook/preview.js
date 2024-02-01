@@ -18,6 +18,10 @@ import {
   Theme
 } from '../../src/shared/const/theme'
 
+import {
+  FeaturesFlagsDecorator
+} from '../../src/shared/config/storybook/FeaturesFlagsDecorator/FeaturesFlagsDecorator'
+
 export const parameters = {
   actions: {
     argTypesRegex: '^on[A-Z].*'
@@ -42,5 +46,6 @@ export const decorators = [
   StyleDecorator,
   ThemeDecorator(Theme.LIGHT),
   RouterDecorator,
-  SuspenseDecorator
+  SuspenseDecorator,
+  FeaturesFlagsDecorator({})
 ]
