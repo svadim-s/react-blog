@@ -8,11 +8,13 @@ import { useTranslation } from 'react-i18next'
 import { useSelector } from 'react-redux'
 import { classNames } from '@/shared/lib/classNames/classNames'
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch'
-import { TextSize, Text } from '@/shared/ui/deprecated/Text'
+import { TextSize, Text as TextDeprecated } from '@/shared/ui/deprecated/Text'
+import { Text } from '@/shared/ui/redesigned/Text'
 import { useInitialEffect } from '@/shared/lib/hooks/useInitilaEffect/useInitialEffect'
 import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId'
 import { VStack } from '@/shared/ui/redesigned/Stack'
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton'
+import { ToggleFeatures } from '@/shared/lib/features'
 
 interface ArticleDetailsCommentsProps {
   className?: string
@@ -36,9 +38,20 @@ export const ArticleDetailsComments = (props: ArticleDetailsCommentsProps) => {
 
   return (
     <VStack gap='16' max className={classNames('', {}, [className])}>
-      <Text
-        size={TextSize.L}
-        title={t('Comments')}
+      <ToggleFeatures
+        feature='isAppRedesigned'
+        on={
+          <Text
+            size='l'
+            title={t('Comments')}
+          />
+        }
+        off={
+          <TextDeprecated
+            size={TextSize.L}
+            title={t('Comments')}
+          />
+        }
       />
       <Suspense fallback={<Skeleton />}>
         <AddCommentForm onSendComment={onSendComment} />

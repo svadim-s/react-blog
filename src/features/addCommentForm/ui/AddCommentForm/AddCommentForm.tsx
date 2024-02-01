@@ -2,14 +2,18 @@ import { getAddCommentFormError, getAddCommentFormText } from '../../model/selec
 import { useTranslation } from 'react-i18next'
 import { useSelector } from 'react-redux'
 import { classNames } from '@/shared/lib/classNames/classNames'
-import { Button, ThemeButton } from '@/shared/ui/deprecated/Button'
+import { Button as ButtonDeprecated, ThemeButton } from '@/shared/ui/deprecated/Button'
+import { Button } from '@/shared/ui/redesigned/Button'
 import cls from './AddCommentForm.module.scss'
 import { memo, useCallback } from 'react'
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch'
 import { addCommentFormActions, addCommentFormReducer } from '../../model/slices/addCommentFormSlice'
 import { DynamicModuleLoader, ReducerList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader'
 import { HStack } from '@/shared/ui/redesigned/Stack'
-import { Input } from '@/shared/ui/deprecated/Input'
+import { Input as InputDeprecated } from '@/shared/ui/deprecated/Input'
+import { Input } from '@/shared/ui/redesigned/Input'
+import { ToggleFeatures } from '@/shared/lib/features'
+import { Card } from '@/shared/ui/redesigned/Card'
 
 export interface AddCommentFormProps {
   className?: string
@@ -37,27 +41,57 @@ const AddCommentForm = memo(({ className, onSendComment }: AddCommentFormProps) 
 
   return (
     <DynamicModuleLoader reducers={reducers}>
-      <HStack
-        data-testid='AddCommentForm'
-        justify='between'
-        max
-        className={classNames(cls.AddCommentForm, {}, [className])}
-      >
-        <Input
-          data-testid='AddCommentForm.Input'
-          className={cls.input}
-          placeholder={t('Enter comment text')}
-          value={text}
-          onChange={onCommentTextChange}
-        />
-        <Button
-          data-testid='AddCommentForm.Button'
-          theme={ThemeButton.OUTLINE}
-          onClick={onSendHandler}
-        >
-          {t('Send')}
-        </Button>
-      </HStack>
+      <ToggleFeatures
+        feature='isAppRedesigned'
+        on={
+          <Card padding='24' border='round' max>
+            <HStack
+              data-testid='AddCommentForm'
+              justify='between'
+              max
+              gap='16'
+              className={classNames(cls.AddCommentFormRedesigned, {}, [className])}
+            >
+              <Input
+                data-testid='AddCommentForm.Input'
+                className={cls.input}
+                placeholder={t('Enter comment text')}
+                value={text}
+                onChange={onCommentTextChange}
+              />
+              <Button
+                data-testid='AddCommentForm.Button'
+                onClick={onSendHandler}
+              >
+                {t('Send')}
+              </Button>
+            </HStack>
+          </Card>
+        }
+        off={
+          <HStack
+            data-testid='AddCommentForm'
+            justify='between'
+            max
+            className={classNames(cls.AddCommentForm, {}, [className])}
+          >
+            <InputDeprecated
+              data-testid='AddCommentForm.Input'
+              className={cls.input}
+              placeholder={t('Enter comment text')}
+              value={text}
+              onChange={onCommentTextChange}
+            />
+            <ButtonDeprecated
+              data-testid='AddCommentForm.Button'
+              theme={ThemeButton.OUTLINE}
+              onClick={onSendHandler}
+            >
+              {t('Send')}
+            </ButtonDeprecated>
+          </HStack>
+        }
+      />
     </DynamicModuleLoader>
   )
 })
