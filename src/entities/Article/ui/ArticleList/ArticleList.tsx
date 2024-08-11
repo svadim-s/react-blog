@@ -18,7 +18,7 @@ interface ArticleListProps {
   target?: HTMLAttributeAnchorTarget
 }
 
-const getSkeletons = (view: ArticleView) => {
+export const getSkeletons = (view: ArticleView) => {
   return new Array(view === ArticleView.TILE ? 9 : 3)
     .fill(0)
     .map((item, index) => (
